@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Recipe</title>
+<link rel="stylesheet" href="styleR.css">
+  
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" style="background-color: #e90c52;">
+    <div class="navbar-brand">Best Recipe</div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="indexR.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="#">Recipes</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Welcome To Best Recipe Collection!</h1>
+      <p>Search mouth-watering recipes to satisfy your craving.</p>
+      <form class="search-box">
+        <input type="text" placeholder="Search Recipes" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- JavaScript for toggling menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
